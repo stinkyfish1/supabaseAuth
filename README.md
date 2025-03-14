@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js-prosjekt med Supabase-autentisering og OpenAI Chatbot
 
-## Getting Started
+Dette er et Next.js-prosjekt hvor jeg bruker **Supabase** for autentisering og planlegger å integrere en **chatbot** ved hjelp av OpenAI API.
 
-First, run the development server:
+## Funksjoner
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Autentisering med Supabase**: Brukere kan registrere seg og logge inn sikkert.
+- **Brukerprofiler**: Viser brukernavn og profilbilde fra Supabase.
+- **Filopplasting**: Brukere kan laste opp bilder og lagre dem i Supabase-lagring.
+- **Chatbot (under utvikling)**: En AI-basert chatbot ved hjelp av OpenAI API.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Teknologier
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Next.js](https://nextjs.org/) – React-rammeverk for frontend
+- [Supabase](https://supabase.com/) – Backend for autentisering og database
+- [OpenAI API](https://openai.com/) – For å lage chatboten
+- [TypeScript](https://www.typescriptlang.org/) – For bedre kodekvalitet
+- [Auth0](https://auth0.com/) – Brukes for ekstra autentisering
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installasjon
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Klon repoet:**
+   ```sh
+   git clone https://github.com/ditt-brukernavn/prosjekt.git
+   cd prosjekt
+2. **Installer Avhengigheter:**
+    npm install
+3. **Konfigurer miljøvariabler:**
+    *Opprett en .env.local-fil og legg til:*
+    NEXT_PUBLIC_SUPABASE_URL=din_supabase_url
+    NEXT_PUBLIC_SUPABASE_ANON_KEY=din_supabase_anon_nøkkel
+    OPENAI_API_KEY=din_openai_api_nøkkel
+4. **Start Prosjektet:**
+    npm run dev
