@@ -6,7 +6,6 @@ Dette er et Next.js-prosjekt hvor jeg bruker **Supabase** for autentisering og p
 
 - **Autentisering med Supabase**: Brukere kan registrere seg og logge inn sikkert.
 - **Brukerprofiler**: Viser brukernavn og profilbilde fra Supabase.
-- **Filopplasting**: Brukere kan laste opp bilder og lagre dem i Supabase-lagring.
 - **Chatbot (under utvikling)**: En AI-basert chatbot ved hjelp av OpenAI API.
 
 ## Teknologier
@@ -15,7 +14,6 @@ Dette er et Next.js-prosjekt hvor jeg bruker **Supabase** for autentisering og p
 - [Supabase](https://supabase.com/) – Backend for autentisering og database
 - [OpenAI API](https://openai.com/) – For å lage chatboten
 - [TypeScript](https://www.typescriptlang.org/) – For bedre kodekvalitet
-- [Auth0](https://auth0.com/) – Brukes for ekstra autentisering
 
 ## Installasjon
 
