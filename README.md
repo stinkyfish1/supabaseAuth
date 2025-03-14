@@ -24,11 +24,14 @@ Dette er et Next.js-prosjekt hvor jeg bruker **Supabase** for autentisering og p
    git clone https://github.com/ditt-brukernavn/prosjekt.git
    cd prosjekt
 2. **Installer Avhengigheter:**
+    ```sh
     npm install
 3. **Konfigurer miljøvariabler:**
     *Opprett en .env.local-fil og legg til:*
+    ```sh
     NEXT_PUBLIC_SUPABASE_URL=din_supabase_url
     NEXT_PUBLIC_SUPABASE_ANON_KEY=din_supabase_anon_nøkkel
     OPENAI_API_KEY=din_openai_api_nøkkel
 4. **Start Prosjektet:**
+    ```sh
     npm run dev
