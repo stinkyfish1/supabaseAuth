@@ -12,22 +12,23 @@ export async function login(formData: FormData) {
     const password = formData.get("password") as string;
 
     const { error } = await supabase.auth.signInWithPassword({ email, password });
+    console.log("Attempting login with:", email, password);
 
     if (error) {
-        console.error("Login error:", error.message);
-        redirect("/error");
+        console.error("Login error:", error);
+        return redirect(`/error?message=${encodeURIComponent(error.message)}`);
     }
 
-    // Ensure session is available before redirecting
     const { data: sessionData } = await supabase.auth.getSession();
     if (!sessionData.session) {
         console.error("No session found after login.");
-        redirect("/error");
+        return redirect("/error?message=No session found after login.");
     }
 
     revalidatePath("/", "layout");
     redirect("/");
 }
+
 
 export async function signup(formData: FormData) {
     const supabase = createClient();
